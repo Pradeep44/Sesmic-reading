@@ -66,8 +66,8 @@ The application needs to work in the following way:
 
 You are free to use any library or framework, but be ready to justify why you needed to use them.
 
-#### BONUS:
+## Bonus:
 
-Test cases are always a plus point.
-The UI should be neat and UX friendly.
-Proper folder structure is always nice to have.
+- Test cases are always a plus point.
+- The UI should be neat and UX friendly.
+- Proper folder structure is always nice to have.
