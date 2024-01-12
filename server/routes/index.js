@@ -2,6 +2,11 @@ import express from "express";
 
 const router = express.Router();
 
-router.get("/", (req, res) => res.send("Welcome to this route"));
+router.get("/", (req, res) =>
+  res.json({
+    status: 200,
+    message: "Welcome to this route",
+  })
+);
 
 export default router;
