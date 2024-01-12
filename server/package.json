@@ -14,7 +14,6 @@
     "fullstack",
     "codingmountain"
   ],
-  "type": "module",
   "author": "CodingMountain",
   "license": "ISC",
   "dependencies": {

@@ -1,7 +1,7 @@
-import cors from "cors";
-import express from "express";
+const cors = require("cors");
+const express = require("express");
 
-import router from "./routes/index.js";
+const router = require("./routes/index.js");
 
 const PORT = "9797";
 
