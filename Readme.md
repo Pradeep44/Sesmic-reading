@@ -1,4 +1,4 @@
-# Take away Assignment
+# Fullstack Take away Assignment
 
 Geologists want to measure earthquake activity for potential earthquakes. They have installed a sensor to track seismic activity. The sensor produces the output and sends it to us in a plain text file. The problem is the different dates and the values are all in different order.
 
@@ -38,7 +38,18 @@ Example:
 
 So, here the first line contains -999 for 20230810. So, add 800 250 and 180 as readings for 20230810. Then, stop the reading for this line and move to the next line which is start of 20230720.
 
-Your tasks are the following. Please make sure all are fulfilled:
+## How to run the project
+
+- **npm install** to install the packages for both client and server.
+- **npm run dev** to run both server and client
+- Client runs on port 5173
+- Server runs on port 9797
+
+If you want to add new packages, install inside server or client folder.
+
+## Task
+
+Please make sure all are fulfilled:
 
 - Make a data model in the Postgres.
 - You can use Prisma or any ORM as well.
