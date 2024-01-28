@@ -70,4 +70,43 @@ router.post('/load-data', upload.single('readings'), async(req, res) => {
   return res.status(200).send({ message: 'Data loaded to db' })
 })
 
+router.get('/get-data', async(req,res,) => {
+  const { day, month, year} = req.query;
+
+  let query = {};
+
+  if(day) {
+    query.day = day; 
+  }
+
+  if(month) {
+    query.month = month;
+  }
+
+  query.year = year;
+
+  const readings = await Reading.find(query);
+
+  let data = {};
+  let status = 200;
+
+  if(!readings.length) {
+    data.message = "Not found";
+    status = 404;
+  } else {
+    data = readings.map(reading => {
+      return {
+        day: reading.day,
+        month: reading.month,
+        year: reading.year,
+        max: Math.max(...reading.frequency),
+        min: Math.min(...reading.frequency),
+        count: reading.frequency.length
+      }
+    })
+  }
+
+  return res.status(status).send({ data });
+})
+
 module.exports = router;
