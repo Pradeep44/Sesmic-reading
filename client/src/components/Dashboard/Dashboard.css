@@ -1,0 +1,95 @@
+.dashboard-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.filter-button-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.filter-container {
+    display: flex;
+    gap: 10px;
+}
+
+.filter-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+    
+}
+
+.fetch-button,
+.clear-button {
+    padding: 10px;
+    width: 100px;
+    height: 40px;
+    background-color: skyblue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: skyblue;
+    color: white;
+}
+
+.filter-item {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.filter-item label {
+    margin-bottom: 5px;
+}
+
+.filter-item select,
+.filter-item input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.filter-item select {
+    width: 100%;
+}
+
+.filter-item button {
+    padding: 8px 12px;
+    background-color: skyblue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}

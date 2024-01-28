@@ -2,6 +2,8 @@ import { useEffect } from "react";
 
 import "./App.css";
 
+import Dashboard from "./components/Dashboard/Dashboard";
+
 function App() {
   useEffect(() => {
     const data = async () => {
@@ -12,7 +14,7 @@ function App() {
 
   return (
     <div>
-      <h1>Hello world</h1>
+      <Dashboard/>
     </div>
   );
 }
